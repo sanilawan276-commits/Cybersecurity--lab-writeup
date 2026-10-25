@@ -47,3 +47,14 @@ Lessons Learned
 Disclaimer
 
 This project is for cybersecurity education and authorized lab testing.
+
+
+## Week 7: SQL Injection (DVWA)
+
+I compared DVWA's SQL Injection module at Low, Medium, and High, using the same normal input (`1`) each time.
+
+- **Low:** free text box. Input `1` returned the admin record.
+- **Medium:** the free text box was replaced with a dropdown. Input `1` returned the admin record.
+- **High:** input is entered in a separate popup window, then the result is shown on the main page. Input `1` returned the admin record.
+
+**What I learned:** the security level changes how input is submitted, but the same query behaviour can remain. A dropdown or popup is not a real defence on its own. The real fix is parameterized queries on the server, so user input is treated as data, not as SQL code.
