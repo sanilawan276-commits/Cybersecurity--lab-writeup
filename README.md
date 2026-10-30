@@ -58,3 +58,7 @@ I compared DVWA's SQL Injection module at Low, Medium, and High, using the same 
 - **High:** input is entered in a separate popup window, then the result is shown on the main page. Input `1` returned the admin record.
 
 **What I learned:** the security level changes how input is submitted, but the same query behaviour can remain. A dropdown or popup is not a real defence on its own. The real fix is parameterized queries on the server, so user input is treated as data, not as SQL code.
+
+Week 5
+
+sudo nmap -sV -p 80,3306 127.0.0.1: Port 80 open, running Apache httpd 2.4.68 (Debian). Port 3306 open, identified as MariaDB (nmap marks it with "?" because its identification is uncertain).
