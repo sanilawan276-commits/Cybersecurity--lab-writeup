@@ -62,3 +62,30 @@ I compared DVWA's SQL Injection module at Low, Medium, and High, using the same 
 Week 5
 
 sudo nmap -sV -p 80,3306 127.0.0.1: Port 80 open, running Apache httpd 2.4.68 (Debian). Port 3306 open, identified as MariaDB (nmap marks it with "?" because its identification is uncertain).
+
+
+
+## Week 10: Hydra on a Local Test Account
+
+I tested password guessing against an SSH service on my own machine (127.0.0.1), using a test account I created for this exercise. The account was deleted and the SSH service was stopped afterwards.
+
+**What I did**
+- Created a test account on my Kali machine and set its password.
+- Started the SSH service and confirmed it was listening on port 22.
+- Built a small wordlist of common passwords and wrong guesses.
+- Ran Hydra with `hydra -l testuser -P ~/wordlist.txt -t 4 -V ssh://127.0.0.1`.
+
+**Result**
+- Hydra tested the wordlist and reported "0 valid password found." The test password was not in the list, so Hydra could not match it.
+
+**Mistakes I made and fixed**
+- My first run used `-p` (one password) instead of `-P` (a wordlist file), so it did not test the list.
+- The wordlist had a typo (`adminin` instead of `admin`), so one common password was never tested.
+
+**What I learned**
+- Hydra only finds passwords that appear in its list. A "not found" result is only as reliable as the test that produced it, so check your flags and input files first.
+- Weak, common passwords are the first guesses attackers try, so they must never be used on real accounts.
+- Defences such as strong unique passwords, account lockout after repeated failures, and two-factor authentication stop guessing attacks.
+
+### Screenshot
+- Hydra output showing six wrong guesses and the final "0 valid password found" line.
