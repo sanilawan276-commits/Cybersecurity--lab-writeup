@@ -1,4 +1,107 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phishing Awareness Lab</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    text-align: center;
+    padding: 25px;
+}
+
+.box {
+    background: white;
+    max-width: 420px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+input, button {
+    width: 90%;
+    padding: 12px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#lesson {
+    display: none;
+    text-align: left;
+    line-height: 1.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Phishing Awareness Lab</h2>
+
+<p>This is a cybersecurity training simulation.</p>
+
+<p>Use fictional training information only.</p>
+
+<input type="email" id="email"
+placeholder="Demo email address">
+
+<button onclick="showLesson()">
+Continue Simulation
+</button>
+
+<div id="lesson">
+
+<h2>Simulation Complete!</h2>
+
+<p>This demonstration shows how phishing attacks work.</p>
+
+<h3>What attackers may target:</h3>
+
+<ul>
+<li>Email addresses</li>
+<li>Passwords</li>
+<li>Banking information</li>
+<li>Account access</li>
+</ul>
+
+<h3>Warning signs:</h3>
+
+<ul>
+<li>Suspicious links</li>
+<li>False rewards and promises</li>
+<li>Urgent requests</li>
+<li>Websites pretending to be trusted organisations</li>
+</ul>
+
+<p><strong>Remember:</strong> Never enter your real password
+on an untrusted website.</p>
+
+<p>This training page does not transmit or save the
+information entered.</p>
+
+</div>
+</div>
+
+<script>
+function showLesson() {
+    document.getElementById("lesson").style.display = "block";
+}
+</script>
+
+</body>
+</html><<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
