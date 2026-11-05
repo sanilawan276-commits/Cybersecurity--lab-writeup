@@ -1,4 +1,5 @@
-<<!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -73,489 +74,6 @@ button {
 CYBERSECURITY TRAINING SIMULATION.
 Not a real login page.
 Use fictional email and password details only.
-</p>
-
-<form id="loginForm">
-
-<input type="email" id="email"
-placeholder="Fictional email address" required>
-
-<input type="password" id="password"
-placeholder="Fictional password only" required>
-
-<button type="submit">Continue</button>
-
-</form>
-
-<div id="result">
-
-<h2>Security Demonstration!</h2>
-
-<p>Your demonstration entries are visible below:</p>
-
-<p><strong>Fictional email:</strong></p>
-<p id="shownEmail"></p>
-
-<p><strong>Fictional password:</strong></p>
-<p id="shownPassword"></p>
-
-<p>
-This demonstrates why entering information into an
-untrusted login page can be dangerous.
-</p>
-
-<h3>How to stay safe</h3>
-
-<ul>
-<li>Check website addresses carefully.</li>
-<li>Never enter passwords on untrusted websites.</li>
-<li>Use multi-factor authentication.</li>
-<li>Never share verification codes.</li>
-</ul>
-
-<p><strong>Think before you click!</strong></p>
-
-<p>
-These entries are displayed temporarily in this browser.
-They are not transmitted or saved.
-</p>
-
-<button id="clearButton" type="button">
-Clear demonstration details
-</button>
-
-</div>
-</div>
-
-<script>
-const form = document.getElementById("loginForm");
-const result = document.getElementById("result");
-
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    document.getElementById("shownEmail").textContent = email;
-    document.getElementById("shownPassword").textContent = password;
-
-    form.style.display = "none";
-    result.style.display = "block";
-
-    setTimeout(clearDemo, 30000);
-});
-
-function clearDemo() {
-    document.getElementById("shownEmail").textContent = "";
-    document.getElementById("shownPassword").textContent = "";
-
-    result.style.display = "none";
-    form.reset();
-    form.style.display = "block";
-}
-
-document.getElementById("clearButton")
-.addEventListener("click", clearDemo);
-</script>
-
-</body>
-</html>!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phishing Awareness Lab</title>
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background: #eef2f7;
-    padding: 25px 15px;
-}
-
-.container {
-    max-width: 420px;
-    margin: 40px auto;
-    padding: 25px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-h2 {
-    text-align: center;
-    color: #17365d;
-}
-
-.notice {
-    background: #fff3cd;
-    padding: 12px;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
-input, button {
-    width: 100%;
-    padding: 13px;
-    margin-top: 15px;
-    box-sizing: border-box;
-}
-
-button {
-    background: #1769aa;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#result {
-    display: none;
-    margin-top: 20px;
-    padding: 15px;
-    background: #e8f5e9;
-    line-height: 1.6;
-    overflow-wrap: anywhere;
-}
-
-#clearButton {
-    background: #b42318;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-<h2>Account Sign In</h2>
-
-<p class="notice">
-CYBERSECURITY TRAINING SIMULATION.
-Not a real login page.
-Use fictional email and password details only.
-</p>
-
-<form id="loginForm">
-
-<input type="email" id="email"
-placeholder="Fictional email address" required>
-
-<input type="password" id="password"
-placeholder="Fictional password only" required>
-
-<button type="submit">Continue</button>
-
-</form>
-
-<div id="result">
-
-<h2>Security Demonstration!</h2>
-
-<p>Your demonstration entries are visible below:</p>
-
-<p><strong>Fictional email:</strong></p>
-<p id="shownEmail"></p>
-
-<p><strong>Fictional password:</strong></p>
-<p id="shownPassword"></p>
-
-<p>
-This demonstrates why entering information into an
-untrusted login page can be dangerous.
-</p>
-
-<h3>How to stay safe</h3>
-
-<ul>
-<li>Check website addresses carefully.</li>
-<li>Never enter passwords on untrusted websites.</li>
-<li>Use multi-factor authentication.</li>
-<li>Never share verification codes.</li>
-</ul>
-
-<p><strong>Think before you click!</strong></p>
-
-<p>
-These entries are displayed temporarily in this browser.
-They are not transmitted or saved.
-</p>
-
-<button id="clearButton" type="button">
-Clear demonstration details
-</button>
-
-</div>
-</div>
-
-<script>
-const form = document.getElementById("loginForm");
-const result = document.getElementById("result");
-
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    document.getElementById("shownEmail").textContent = email;
-    document.getElementById("shownPassword").textContent = password;
-
-    form.style.display = "none";
-    result.style.display = "block";
-
-    setTimeout(clearDemo, 30000);
-});
-
-function clearDemo() {
-    document.getElementById("shownEmail").textContent = "";
-    document.getElementById("shownPassword").textContent = "";
-
-    result.style.display = "none";
-    form.reset();
-    form.style.display = "block";
-}
-
-document.getElementById("clearButton")
-.addEventListener("click", clearDemo);
-</script>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phishing Awareness Lab</title>
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background: #eef2f7;
-    padding: 25px 15px;
-}
-
-.container {
-    max-width: 420px;
-    margin: 40px auto;
-    padding: 25px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-h2 {
-    text-align: center;
-    color: #17365d;
-}
-
-.notice {
-    background: #fff3cd;
-    padding: 12px;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
-input, button {
-    width: 100%;
-    padding: 13px;
-    margin-top: 15px;
-    box-sizing: border-box;
-}
-
-button {
-    background: #1769aa;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#result {
-    display: none;
-    margin-top: 20px;
-    padding: 15px;
-    background: #e8f5e9;
-    line-height: 1.6;
-    overflow-wrap: anywhere;
-}
-
-#clearButton {
-    background: #b42318;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-<h2>Account Sign In</h2>
-
-<p class="notice">
-CYBERSECURITY TRAINING SIMULATION.
-Not a real login page.
-Use fictional email and password details only.
-</p>
-
-<form id="loginForm">
-
-<input type="email" id="email"
-placeholder="Fictional email address" required>
-
-<input type="password" id="password"
-placeholder="Fictional password only" required>
-
-<button type="submit">Continue</button>
-
-</form>
-
-<div id="result">
-
-<h2>Security Demonstration!</h2>
-
-<p>Your demonstration entries are visible below:</p>
-
-<p><strong>Fictional email:</strong></p>
-<p id="shownEmail"></p>
-
-<p><strong>Fictional password:</strong></p>
-<p id="shownPassword"></p>
-
-<p>
-This demonstrates why entering information into an
-untrusted login page can be dangerous.
-</p>
-
-<h3>How to stay safe</h3>
-
-<ul>
-<li>Check website addresses carefully.</li>
-<li>Never enter passwords on untrusted websites.</li>
-<li>Use multi-factor authentication.</li>
-<li>Never share verification codes.</li>
-</ul>
-
-<p><strong>Think before you click!</strong></p>
-
-<p>
-These entries are displayed temporarily in this browser.
-They are not transmitted or saved.
-</p>
-
-<button id="clearButton" type="button">
-Clear demonstration details
-</button>
-
-</div>
-</div>
-
-<script>
-const form = document.getElementById("loginForm");
-const result = document.getElementById("result");
-
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    document.getElementById("shownEmail").textContent = email;
-    document.getElementById("shownPassword").textContent = password;
-
-    form.style.display = "none";
-    result.style.display = "block";
-
-    setTimeout(clearDemo, 30000);
-});
-
-function clearDemo() {
-    document.getElementById("shownEmail").textContent = "";
-    document.getElementById("shownPassword").textContent = "";
-
-    result.style.display = "none";
-    form.reset();
-    form.style.display = "block";
-}
-
-document.getElementById("clearButton")
-.addEventListener("click", clearDemo);
-</script>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Cybersecurity Training Simulation</title>
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background: #eef2f7;
-    padding: 25px 15px;
-}
-
-.container {
-    max-width: 420px;
-    margin: 40px auto;
-    padding: 25px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-h2 {
-    text-align: center;
-    color: #17365d;
-}
-
-.notice {
-    background: #fff3cd;
-    padding: 12px;
-    border-radius: 6px;
-    color: #664d03;
-    font-size: 14px;
-}
-
-input, button {
-    width: 100%;
-    padding: 13px;
-    margin-top: 15px;
-    box-sizing: border-box;
-}
-
-button {
-    background: #1769aa;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#result {
-    display: none;
-    margin-top: 20px;
-    padding: 15px;
-    background: #e8f5e9;
-    line-height: 1.6;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-<h2>Account Sign In</h2>
-
-<p class="notice">
-CYBERSECURITY TRAINING SIMULATION.
-This is not a real login page.
-Use fictional information only.
 </p>
 
 <form id="loginForm">
@@ -563,7 +81,7 @@ Use fictional information only.
 <input
 type="email"
 id="email"
-placeholder="student@example.com"
+placeholder="Fictional email address"
 required
 >
 
@@ -582,25 +100,18 @@ required
 
 <h2>Security Demonstration!</h2>
 
-<p>You have completed the simulation.</p>
+<p>Your demonstration entries are visible below:</p>
 
-<h3>What could a real attacker do?</h3>
+<p><strong>Fictional email:</strong></p>
+<p id="shownEmail"></p>
 
-<ul>
-<li>Collect email addresses.</li>
-<li>Steal passwords.</li>
-<li>Attempt to access accounts.</li>
-<li>Commit identity or financial fraud.</li>
-</ul>
+<p><strong>Fictional password:</strong></p>
+<p id="shownPassword"></p>
 
-<h3>Warning signs</h3>
-
-<ul>
-<li>Suspicious website addresses.</li>
-<li>False rewards and giveaways.</li>
-<li>Urgent messages.</li>
-<li>Impersonation of trusted organisations.</li>
-</ul>
+<p>
+This demonstrates why entering information into an
+untrusted login page can be dangerous.
+</p>
 
 <h3>How to stay safe</h3>
 
@@ -611,29 +122,59 @@ required
 <li>Never share verification codes.</li>
 </ul>
 
-<strong>Think before you click!</strong>
+<p><strong>Think before you click!</strong></p>
 
 <p>
-No information is transmitted or saved by this simulation.
+These entries are displayed temporarily in this browser.
+They are not transmitted or saved.
 </p>
+
+<button id="clearButton" type="button">
+Clear demonstration details
+</button>
 
 </div>
 </div>
 
 <script>
-document.getElementById("loginForm")
-.addEventListener("submit", function(event) {
+
+const form = document.getElementById("loginForm");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", function(event) {
 
     event.preventDefault();
 
-    document.getElementById("email").value = "";
-    document.getElementById("password").value = "";
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
-    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("shownEmail").textContent = email;
+    document.getElementById("shownPassword").textContent = password;
 
-    document.getElementById("result").style.display = "block";
+    form.style.display = "none";
+    result.style.display = "block";
+
+    setTimeout(clearDemo, 30000);
+
 });
+
+function clearDemo() {
+
+    document.getElementById("shownEmail").textContent = "";
+    document.getElementById("shownPassword").textContent = "";
+
+    result.style.display = "none";
+
+    form.reset();
+    form.style.display = "block";
+
+}
+
+document.getElementById("clearButton")
+.addEventListener("click", clearDemo);
+
 </script>
 
 </body>
 </html>
+```
